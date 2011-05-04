@@ -1,0 +1,83 @@
+<% content_for :js_header do %>
+
+<!-- jquery graphing. sparklines -->
+<%= javascript_include_tag "jquery.sparkline.min.js" %>
+
+<!-- ajax view -->
+<script type="text/javascript">
+$(function() {
+    /** This code runs when everything has been loaded on the page */
+    /* Inline sparklines take their values from the contents of the tag */
+    $('.inlinesparkline').sparkline(); 
+
+    /* Sparklines can also take their values from the first argument 
+    passed to the sparkline() function */
+	//var myvalues = [10,8,5,7,4,4,1];
+	//var myvalues = <%= "[1.2,2,3,4,5,6,7,8,7,6,5,4,3,2,1]" %>;
+	var myvalues = <%= @spending_levels %>;
+    $('.dynamicsparkline').sparkline(myvalues);
+
+    /* The second argument gives options such as chart type */
+    $('.dynamicbar').sparkline(myvalues, {type: 'bar', barColor: 'green'} );
+
+    /* Use 'html' instead of an array of values to pass options 
+    to a sparkline with data in the tag */
+    $('.inlinebar').sparkline('html', {type: 'bar', barColor: 'red'} );
+});
+</script>
+
+
+<% end %>
+
+
+
+<!-- input book values here -->
+<%= render 'form' %><br/><br/>
+
+<!-- current total -->
+<hr/>
+<div id="book_current_total">
+<%= @current_total.amount %>
+</div>
+<hr/>
+
+<!-- sparklines -->
+<p>
+Inline Sparkline: <span class="inlinesparkline">1,4,4,7,5,9,10</span>.
+</p>
+<p>
+Sparkline with dynamic data: <span class="dynamicsparkline">Loading..</span>
+</p>
+<p>
+Bar chart with dynamic data: <span class="dynamicbar">Loading..</span>
+</p>
+<p>
+Bar chart with inline data: <span class="inlinebar">1,3,4,5,3,5</span>
+</p>
+
+
+
+<!-- debug -->
+<hr/>
+<%= @percent_current_income %>
+<hr/>
+<%= @spending_levels %>
+<hr/>
+<%= @sum_income %>
+<hr/>
+<%= @sum_bill %>
+<hr/>
+
+<!-- list of quotes. -->
+<h1>Listing books</h1>
+
+<div id="book_table">
+  <%= render 'table' %>
+</div>
+<br />
+
+<!-- pagination -->
+<%= paginate @books %>
+<br />
+
+<%= link_to 'New Book', new_book_path %>

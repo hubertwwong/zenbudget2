@@ -1,0 +1,58 @@
+/*
+ * =============================================================================
+ * Overall Layout
+ * =============================================================================
+ */
+div#nav_header {
+    margin-bottom: 20px;
+}
+
+p#nav_header_logo {
+    background-color: #67E300;
+}
+
+p#nav_header_links {
+    text-align: right;
+}
+
+div#nav_side {
+
+}
+
+div#nav_footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p#nav_footer_links {
+    text-align: center;
+}
+
+/*
+ * =============================================================================
+ * POST
+ * =============================================================================
+ */
+
+/* contains text entry field for post.*/
+div#post_form {
+    margin-bottom: 40px;
+}
+
+/* display the current task. */
+div#post_current {
+    margin-bottom: 40px;
+}
+
+/*
+ * =============================================================================
+ * NEWS
+ * =============================================================================
+ */
+div#news_main {
+    margin-bottom: 80px;	
+}
+
+div#news_side {
+    margin-bottom: 80px;
+}

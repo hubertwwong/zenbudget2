@@ -1,0 +1,21 @@
+<!-- LOGO -->
+<div class="grid_4" id="nav_header">
+    zenbudget
+</div>
+
+<!-- login / registration -->
+<div class="grid_8" id="nav_header">
+    <p id="nav_header_links">
+	<% if user_signed_in? %>
+	    <%= current_user.email %>
+	    |
+	    <%= link_to 'Logout', destroy_user_session_path %>
+	<% else %>
+	    <%= link_to 'Login', new_user_session_path %>
+	    |
+	    <%= link_to 'Register', new_user_registration_path %>
+	<% end %>
+    </p>
+</div>
+
+<div class="clear"></div>

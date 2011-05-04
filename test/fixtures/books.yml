@@ -1,0 +1,94 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+user_01_current_income:
+  amount: 3550.00
+  category: g015
+  description: system current income. don't modify.
+  user: user_01
+
+user_01_gas:
+  amount: 50.00
+  category: g012
+  description: gas payment
+  user: user_01
+  created_at: <%= 1.day.ago.utc %>
+
+user_01_income_01:
+  amount: 1000.00
+  category: g016
+  description: income
+  user: user_01
+  created_at: <%= 1.months.ago.utc %>
+  
+user_01_income_02:
+  amount: 1000.00
+  category: g016
+  description: income
+  user: user_01
+  created_at: <%= 2.months.ago.utc %>
+  
+user_01_income_03:
+  amount: 1000.00
+  category: g016
+  description: income
+  user: user_01
+  created_at: <%= 3.months.ago.utc %>
+  
+user_01_income_04:
+  amount: 1000.00
+  category: g016
+  description: income
+  user: user_01
+  created_at: <%= 4.months.ago.utc %>
+  
+user_01_credit_01:
+  amount: 100.00
+  category: g002
+  description: income
+  user: user_01
+  created_at: <%= 1.months.ago.utc %>
+  
+user_01_credit_02:
+  amount: 100.00
+  category: g002
+  description: income
+  user: user_01
+  created_at: <%= 2.months.ago.utc %>
+  
+user_01_credit_03:
+  amount: 100.00
+  category: g002
+  description: income
+  user: user_01
+  created_at: <%= 3.months.ago.utc %>
+  
+user_01_credit_04:
+  amount: 100.00
+  category: g002
+  description: income
+  user: user_01
+  created_at: <%= 4.months.ago.utc %>
+
+user_03_current_income:
+  amount: 890.00
+  category: g015
+  description: system current income. don't modify.
+  user: user_03
+
+user_03_income_01:
+  amount: 1000.00
+  category: g016
+  description: income
+  user: user_03
+  
+user_03_bill_credit_01:
+  amount: 10.00
+  category: g002
+  description: credit card bills
+  user: user_03
+  
+user_03_saving_retirement_01:
+  amount: 100.00
+  category: g007
+  description: getting old. need to retire.
+  user: user_03

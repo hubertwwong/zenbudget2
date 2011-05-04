@@ -1,0 +1,37 @@
+/*
+ * =============================================================================
+ * FLASH ERROR MESSAGES FOR RAILS.
+ * =============================================================================
+ */
+div#flash_error {
+    color: #FFFFFF;
+    background-color: #FF0000;
+    
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* flash[:alert] used for devise error messages. */
+div#flash_alert {
+    color: #FFFFFF;
+    background-color: #FF9900;
+    
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+div#flash_notice {
+    color: #FFFFFF;
+    background-color: #00CC00;
+    
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+div#flash_confirm {
+    color: #FFFFFF;
+    background-color: #00CC00;
+    
+    padding: 10px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,6 @@
+<!-- 
+	partial that stores elements that need to be refreshed.
+	that way you can just call this partial to refresh the necessary elements.
+-->
+// reload div with the book table id with the table partial
+$('div#book_table').html('<%= escape_javascript render('table') %>');

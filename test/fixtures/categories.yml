@@ -1,0 +1,59 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString1
+
+two:
+  name: MyString2
+
+g001:
+  name: bill:utility
+
+g002:
+  name: bill:credit card
+    
+g003:
+  name: bill:insurance
+    
+g004:
+  name: bill:mortgage
+    
+g005:
+  name: bill:rent
+    
+g006:
+  name: bill:misc
+    
+g007:
+  name: saving:retirement
+    
+g008:
+  name: saving:emergency fund      
+
+g009:
+  name: saving:misc 
+    
+g010:
+  name: other:food       
+
+g011:
+  name: other:entertainment
+    
+g012:
+  name: other:food        
+
+g013:
+  name: other:gas
+    
+g014:
+  name: other:misc       
+
+g015:
+  name: system:current income
+    
+g016:
+  name: income:paycheck        
+
+g017:
+  name: income:misc
+

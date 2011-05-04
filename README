@@ -1,0 +1,20 @@
+Zenbudget
+
+intro:
+a simple test to demostrate some basic ruby on rails and some jquery stuff.
+Users have a simple way to track expenses and income on a single page.
+
+technology:
+
+css
+- 960px.
+- simple generic layout.
+
+jquery
+- basic jquery used for replace elements on a page.
+- sparklines. for simple charts. 
+
+rails
+- devise. authorization.
+- cancan. authencation.
+- kamini. for pagination.

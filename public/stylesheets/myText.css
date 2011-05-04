@@ -1,0 +1,33 @@
+body{font:15px 'Helvetica Neue',Arial,'Liberation Sans',FreeSans,sans-serif;}
+a:focus{outline:1px dotted}
+hr{border:0 #ccc solid; border-top-width:1px; clear:both; height:0}
+h1{font-size:25px}
+h2{font-size:23px}
+h3{font-size:21px}
+h4{font-size:19px}
+h5{font-size:17px}
+h6{font-size:15px}
+ol{list-style:decimal}
+ul{list-style:disc}
+p,dl,hr,h1,h2,h3,h4,h5,h6,ol,ul,pre,table,address,fieldset{margin:0px; padding:0px}
+
+/* countdown timer. */
+p.red_countdown_text {
+    color: #FF0000;
+    font:60px 'Helvetica Neue',Arial,'Liberation Sans',FreeSans,sans-serif;
+}
+
+p.yellow_countdown_text {
+    color: #FFD700;
+    font:60px 'Helvetica Neue',Arial,'Liberation Sans',FreeSans,sans-serif;
+}
+
+p.green_countdown_text {
+    color: green;
+    font:50px 'Helvetica Neue',Arial,'Liberation Sans',FreeSans,sans-serif;
+}
+
+/* post current task */
+p#post_current_task_text_actual {
+    font:25px 'Helvetica Neue',Arial,'Liberation Sans',FreeSans,sans-serif;
+}

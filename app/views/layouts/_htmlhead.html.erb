@@ -1,0 +1,34 @@
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>zenbudget</title>
+
+<!-- note to self. put the important stuff last -->
+
+<!-- reset. basically this stylesheet blank out all styles.-->
+<%= stylesheet_link_tag "reset" %>
+
+<!-- rails stuff -->
+<!-- note about the :all. inits all stylesheets in the stylesheet folder -->
+<%= csrf_meta_tag %>
+
+<!-- load application, jquery, and rails.js -->
+<!-- note that jquery has to come first -->
+<%= javascript_include_tag "jquery.min.js" %>
+<%= javascript_include_tag "rails" %>
+<%= javascript_include_tag "application" %>
+
+<!-- 
+	allows user to include additional javascript libraries and / or scripts
+	using the content_for :js_header tag from your views.
+-->
+<%= yield :js_header %>
+
+<!-- 960px stuff -->
+<%= stylesheet_link_tag "text" %>
+<%= stylesheet_link_tag "960" %>
+
+<!-- css customizations off 960px -->
+<%= stylesheet_link_tag "myLayout" %>
+<%= stylesheet_link_tag "myTable" %>
+<%= stylesheet_link_tag "myText" %>
+<%= stylesheet_link_tag "myForm" %>
+<%= stylesheet_link_tag "myFlashMessage" %>

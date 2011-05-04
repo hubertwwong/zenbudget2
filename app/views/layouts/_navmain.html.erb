@@ -1,0 +1,10 @@
+<!-- MAIN BODY -->
+<div class="grid_9" id="nav_main">
+    <!-- flash[:error], flash[:notice], and flash[:confirm] error message -->
+    <% flash.each do |key, value| %>
+        <div id="flash_<%= key %>"><%= value %></div>
+    <% end %> 
+
+    <!-- main content -->
+    <%= yield %>
+</div>

@@ -1,0 +1,9 @@
+// reload div with the book table id with the table partial
+$('div#book_table').html('<%= escape_javascript render('table') %>');
+
+// a simple append test.
+$('body h1').append('hihihi');
+
+// blanks out the input forms.
+$('form')[0].reset();
+$('form')[1].reset();
